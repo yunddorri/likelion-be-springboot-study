@@ -1,0 +1,3 @@
+com\shop\shop\entity\QBoard.class
+com\shop\shop\entity\QItem.class
+com\shop\shop\repository\BoardRepository.class
