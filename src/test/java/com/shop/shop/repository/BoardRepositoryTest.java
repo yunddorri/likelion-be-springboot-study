@@ -17,6 +17,7 @@ class BoardRepositoryTest {
     @Autowired
     BoardRepository boardRepository;
 
+    //insert query문 없이 게시판 테이블에 데이터를 insert하는 테스트를 작성하였습니다.
     @Test
     @DisplayName("게시글 저장 테스트")
     public void createBoardTest(){
@@ -30,6 +31,7 @@ class BoardRepositoryTest {
         System.out.println(savedBoard.toString());
     }
 
+    //테스트 코드 실행 시 db에 게시글 데이터가 없기 때매 테스트 데이터 생성을 위해 게시글을 저장하는 메서드를 작성하였습니다.
     public void createBoardList(){
         for(int i=2;i<=11;i++){
             Board board = new Board();
